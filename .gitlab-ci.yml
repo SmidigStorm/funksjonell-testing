@@ -1,23 +1,19 @@
 stages:
   - test
 
-# Define the test job
 e2e_tests:
   stage: test
-  image: node:18-buster # Use an official Node.js image
+  image: mcr.microsoft.com/playwright:v1.39.0-focal # Official Playwright image, replace version as needed
   before_script:
     - npm install # Install project dependencies
-    - npx playwright install --with-deps # Install browsers required for Playwright
 
   script:
-    - npm run test # Run your tests and generate JSON report
-    - npm run report # Generate HTML report based on the JSON
+    - npm run test # Run tests and generate JSON report
+    - npm run report # Generate HTML report
 
   artifacts:
     paths:
       - cucumber_report.html # Save the report as an artifact for easy viewing
 
-  # Schedule the tests to run automatically
   only:
     - schedules
-
