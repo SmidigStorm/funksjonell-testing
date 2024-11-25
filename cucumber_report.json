@@ -1,0 +1,66 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sample-feature;visiting-example-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Visiting Example Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 131900099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the example page",
+            "match": {
+              "location": "step-definitions\\sample.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 419351899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see \"Example Domain\" in the page title",
+            "match": {
+              "location": "step-definitions\\sample.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11583000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6779199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sample-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sample Feature",
+    "tags": [],
+    "uri": "features\\sample.feature"
+  }
+]
