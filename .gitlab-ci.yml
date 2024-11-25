@@ -3,7 +3,7 @@ stages:
 
 e2e_tests:
   stage: test
-  image: mcr.microsoft.com/playwright:v1.39.0-focal # Official Playwright image, replace version as needed
+  image: mcr.microsoft.com/playwright:v1.49.0-focal # Official Playwright image, replace version as needed
   before_script:
     - npm install # Install project dependencies
 
