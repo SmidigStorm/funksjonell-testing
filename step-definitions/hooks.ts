@@ -5,7 +5,7 @@ let browser: Browser;
 
 // Launch the browser before all scenarios
 BeforeAll(async function () {
-  browser = await chromium.launch({ headless: false }); // Launch browser in non-headless mode
+  browser = await chromium.launch({ headless: true }); // Launch browser in non-headless mode
 });
 
 // Close the browser after all scenarios
